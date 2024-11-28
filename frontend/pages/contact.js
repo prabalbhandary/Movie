@@ -7,6 +7,10 @@ import {SiGithub} from "react-icons/si"
 import { FaArrowDown } from "react-icons/fa";
 
 export default function contact() {
+    const [followed, setFollowed] = useState(false);
+    const handleFollowed = () => {
+        setFollowed(!followed);
+    }
   return (
     <>
       <div className="contactpage">
@@ -37,7 +41,7 @@ export default function contact() {
                     </div>
                 </div>
                 <div className="bottomcard">
-                    <Link href="/" className="followbtn">Follow</Link>
+                    <Link href="/" className="followbtn">{followed ? "Unfollow" : "Follow"}</Link>
                     <div className="bcardtext">
                         <p>Learn More About My Profile</p>
                         <FaArrowDown />
