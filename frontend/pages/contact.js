@@ -30,8 +30,8 @@ export default function contact() {
             <div className="contactdesign">
               <div className="topccard">
                 <div className="tcardsvg">
-                  <HiMiniBars3BottomRight />
-                  <AiFillSetting />
+                  <HiMiniBars3BottomRight style={{ cursor: "pointer" }} />
+                  <AiFillSetting style={{ cursor: "pointer" }} />
                 </div>
                 <div className="usercoderimg">
                   <img src="/img/coder.jpg" alt="Prabal Bhandary" />
