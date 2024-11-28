@@ -6,6 +6,7 @@ import { RiTelegramLine } from "react-icons/ri";
 import { SiGithub } from "react-icons/si";
 import { FaArrowDown } from "react-icons/fa";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function contact() {
   const [followed, setFollowed] = useState(false);
