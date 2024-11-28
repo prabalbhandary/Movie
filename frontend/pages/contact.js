@@ -5,6 +5,7 @@ import {IoLogoInstagram} from "react-icons/io5"
 import {RiTelegramLine} from "react-icons/ri"
 import {SiGithub} from "react-icons/si"
 import { FaArrowDown } from "react-icons/fa";
+import { useState } from "react";
 
 export default function contact() {
     const [followed, setFollowed] = useState(false);
