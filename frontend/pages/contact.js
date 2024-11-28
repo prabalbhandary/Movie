@@ -48,9 +48,9 @@ export default function contact() {
               </div>
             </div>
             <div className="bottomcard">
-              <Link className="followbtn" onClick={handleFollowed} style={{ cursor: "pointer" }}>
+              <a style={{cursor:"pointer"}} className="followbtn" onClick={handleFollowed}>
                 {followed ? "Unfollow" : "Follow"}
-              </Link>
+              </a>
               <div className="bcardtext">
                 <p>Learn More About My Profile</p>
                 <FaArrowDown />
