@@ -27,9 +27,9 @@ export default function Aside() {
         <div className="aside">
             <div className="logo flex">
                 <BiCameraMovie />
-                <Link href="/">
+                <a href="/">
                     <h1>MakMovies</h1>
-                </Link>
+                </a>
             </div>
             <ul className="mt-2">
                 <Link href="/" className={activelink === '/' ? 'active' : ''} onClick={() => handleLinkClick('/')}>
