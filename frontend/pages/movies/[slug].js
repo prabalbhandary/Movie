@@ -161,7 +161,7 @@ export default function moviesPost() {
                         </tr>
                         <tr>
                           <td>&#9642; Genre:</td>
-                          <td>{alldata && alldata[0]?.genre.join(", ")}</td>
+                          <td>{alldata && alldata[0]?.genre.join(", ").toUpperCase()}</td>
                         </tr>
                         <tr>
                           <td>&#9642; Language:</td>
