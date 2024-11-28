@@ -7,9 +7,12 @@ import { SiGithub } from "react-icons/si";
 import { FaArrowDown } from "react-icons/fa";
 import { useState } from "react";
 import Head from "next/head";
+import useFetchData from "@/hooks/useFetchData";
+import Loader from "@/components/Loader";
 
 export default function contact() {
   const [followed, setFollowed] = useState(false);
+  const { loading } = useFetchData("/api/getmovies");
   const handleFollowed = () => {
     setFollowed(!followed);
   };
@@ -19,46 +22,53 @@ export default function contact() {
         <title>Contact | Makmovies</title>
         <meta name="description" content="All the Web Series" />
       </Head>
-
-      <div className="contactpage">
-        <div className="contactcard">
-          <div className="contactdesign">
-            <div className="topccard">
-              <div className="tcardsvg">
-                <HiMiniBars3BottomRight />
-                <AiFillSetting />
-              </div>
-              <div className="usercoderimg">
-                <img src="/img/coder.jpg" alt="Prabal Bhandary" />
-              </div>
-              <div className="usercoderinfo">
-                <h1>PRABAL BHANDARY</h1>
-                <h3>Web Developer</h3>
-                <div className="usercodersvg">
-                  <Link href="/">
-                    <IoLogoInstagram />
-                  </Link>
-                  <Link href="/">
-                    <RiTelegramLine />
-                  </Link>
-                  <Link href="/">
-                    <SiGithub />
-                  </Link>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="contactpage">
+          <div className="contactcard">
+            <div className="contactdesign">
+              <div className="topccard">
+                <div className="tcardsvg">
+                  <HiMiniBars3BottomRight />
+                  <AiFillSetting />
+                </div>
+                <div className="usercoderimg">
+                  <img src="/img/coder.jpg" alt="Prabal Bhandary" />
+                </div>
+                <div className="usercoderinfo">
+                  <h1>PRABAL BHANDARY</h1>
+                  <h3>Web Developer</h3>
+                  <div className="usercodersvg">
+                    <Link href="/">
+                      <IoLogoInstagram />
+                    </Link>
+                    <Link href="/">
+                      <RiTelegramLine />
+                    </Link>
+                    <Link href="/">
+                      <SiGithub />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="bottomcard">
-              <a style={{cursor:"pointer"}} className="followbtn" onClick={handleFollowed}>
-                {followed ? "Unfollow" : "Follow"}
-              </a>
-              <div className="bcardtext">
-                <p>Learn More About My Profile</p>
-                <FaArrowDown />
+              <div className="bottomcard">
+                <a
+                  style={{ cursor: "pointer" }}
+                  className="followbtn"
+                  onClick={handleFollowed}
+                >
+                  {followed ? "Unfollow" : "Follow"}
+                </a>
+                <div className="bcardtext">
+                  <p>Learn More About My Profile</p>
+                  <FaArrowDown />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
