@@ -17,7 +17,7 @@ import {
 } from "react-icons/fa";
 import { FaI, FaShareFromSquare } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
-import Spinner from "@/components/Spinner";
+import Loader from "@/components/Loader";
 
 export default function moviesPost() {
   const router = useRouter();
@@ -58,7 +58,7 @@ export default function moviesPost() {
           <title>{slug}</title>
         </Head>
         {loading ? (
-          <Spinner />
+          <Loader />
         ) : (
           <div>
             <div className="slideimagebx">
