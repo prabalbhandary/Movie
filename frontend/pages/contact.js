@@ -42,7 +42,7 @@ export default function contact() {
                     </div>
                 </div>
                 <div className="bottomcard">
-                    <Link href="/" className="followbtn">{followed ? "Unfollow" : "Follow"}</Link>
+                    <Link href="/" className="followbtn" onClick={handleFollowed}>{followed ? "Unfollow" : "Follow"}</Link>
                     <div className="bcardtext">
                         <p>Learn More About My Profile</p>
                         <FaArrowDown />
