@@ -11,7 +11,7 @@ import Head from "next/head";
 export default function contact() {
   const [followed, setFollowed] = useState(false);
   const handleFollowed = () => {
-    setFollowed(true);
+    setFollowed(!followed);
   };
   return (
     <>
