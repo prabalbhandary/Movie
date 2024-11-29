@@ -287,7 +287,7 @@ export default function moviesPost() {
             >
               <div className="svg">
                 <Link
-                  href={`https://api.whatsapp.com/send?text=${`https://movie-app-two-drab-68.vercel.app/${router.query.slug}`}`}
+                  href={`https://api.whatsapp.com/send?text=${`https://movie-app-two-drab-68.vercel.app/movies/${router.query.slug}`}`}
                   target="_blank"
                 >
                   <FaInstagram />
@@ -295,7 +295,7 @@ export default function moviesPost() {
               </div>
               <div className="svg">
                 <Link
-                  href={`https://api.whatsapp.com/send?text=${`https://movie-app-two-drab-68.vercel.app/${router.query.slug}`}`}
+                  href={`https://api.whatsapp.com/send?text=${`https://movie-app-two-drab-68.vercel.app/movies/${router.query.slug}`}`}
                   target="_blank"
                 >
                   <FaFacebookSquare />
@@ -303,7 +303,7 @@ export default function moviesPost() {
               </div>
               <div className="svg">
                 <Link
-                  href={`https://api.whatsapp.com/send?text=${`https://movie-app-two-drab-68.vercel.app/${router.query.slug}`}`}
+                  href={`https://api.whatsapp.com/send?text=${`https://movie-app-two-drab-68.vercel.app/movies/${router.query.slug}`}`}
                   target="_blank"
                 >
                   <FaWhatsappSquare />
