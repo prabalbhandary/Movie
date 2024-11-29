@@ -57,7 +57,7 @@ const Footer = () => {
             </span>
           </h1>
           <div className="fperasec">
-            <p style={{ color: "#ff0000"}}>
+            <p style={{ color: "#ff0000" }}>
               Disclaimer :- We doesn't store any files on our server. We only
               redirect you from one domain to another. All contents are provided
               by non-affiliated third parties.
