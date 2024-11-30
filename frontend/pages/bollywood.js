@@ -33,39 +33,43 @@ export default function bollywood() {
             <Spinner />
           ) : (
             <>
-              {bollywoodData.map((movie) => {
-                return (
-                  <div key={movie._id} className="mcard">
-                    <Link href={`/movies/${movie.slug}`}>
-                      <div className="cardimg">
-                        <img
-                          src={movie.smposter}
-                          alt="movie poster"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div className="contents">
-                        <h5>{movie.title}</h5>
-                        <h6>
-                          <span>{movie.year}</span>
-                          <div className="rate">
-                            <i className="cardfas">
-                              <FaHeart />
-                            </i>
-                            <i className="cardfas">
-                              <FaEye />
-                            </i>
-                            <i className="cardfas">
-                              <FaStar />
-                            </i>
-                            <h6>{movie.rating}</h6>
-                          </div>
-                        </h6>
-                      </div>
-                    </Link>
-                  </div>
-                );
-              })}
+              {bollywoodData.length === 0 ? (
+                <h1>No Bollywood Movies</h1>
+              ) : (
+                bollywoodData.map((movie) => {
+                  return (
+                    <div key={movie._id} className="mcard">
+                      <Link href={`/movies/${movie.slug}`}>
+                        <div className="cardimg">
+                          <img
+                            src={movie.smposter}
+                            alt="movie poster"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div className="contents">
+                          <h5>{movie.title}</h5>
+                          <h6>
+                            <span>{movie.year}</span>
+                            <div className="rate">
+                              <i className="cardfas">
+                                <FaHeart />
+                              </i>
+                              <i className="cardfas">
+                                <FaEye />
+                              </i>
+                              <i className="cardfas">
+                                <FaStar />
+                              </i>
+                              <h6>{movie.rating}</h6>
+                            </div>
+                          </h6>
+                        </div>
+                      </Link>
+                    </div>
+                  );
+                })
+              )}
             </>
           )}
         </div>
