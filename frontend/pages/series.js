@@ -34,7 +34,7 @@ export default function series() {
           ) : (
             <>
               {seriesData.length === 0 ? (
-                <h1>No Series Found</h1>
+                <h1 style={{ textAlign: "center", color: "#ff0000" }}>No Series Found</h1>
               ) : (
                 seriesData.map((movie) => {
                   return (

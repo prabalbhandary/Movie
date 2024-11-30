@@ -34,7 +34,7 @@ export default function movies() {
           ) : (
             <>
               {moviesData.length === 0 ? (
-                <h1>No Movies Found</h1>
+                <h1 style={{ textAlign: "center", color: "#ff0000" }}>No Movies Found</h1>
               ) : (
                 moviesData.map((movie) => {
                   return (

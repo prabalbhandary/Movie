@@ -34,7 +34,7 @@ export default function bollywood() {
           ) : (
             <>
               {bollywoodData.length === 0 ? (
-                <h1>No Bollywood Movies</h1>
+                <h1 style={{ textAlign: "center", color: "#ff0000" }}>No Bollywood Movies</h1>
               ) : (
                 bollywoodData.map((movie) => {
                   return (
