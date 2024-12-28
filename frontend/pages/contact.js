@@ -40,13 +40,13 @@ export default function contact() {
                   <h1>PRABAL BHANDARY</h1>
                   <h3>Web Developer</h3>
                   <div className="usercodersvg">
-                    <Link href="/">
+                    <Link href="https://www.instagram.com/prabalb44" target="_blank">
                       <IoLogoInstagram />
                     </Link>
-                    <Link href="/">
+                    <Link href="https://www.facebook.com/prabal.bhandary.5" target="_blank">
                       <RiTelegramLine />
                     </Link>
-                    <Link href="/">
+                    <Link href="https://github.com/prabalbhandary" target="_blank">
                       <SiGithub />
                     </Link>
                   </div>
