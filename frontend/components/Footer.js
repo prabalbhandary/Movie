@@ -44,18 +44,6 @@ const Footer = () => {
               by &nbsp;<Link href="/">MakMovies</Link>&nbsp;
             </p>
           </div>
-          <h1 className="fperasec flex">
-            Developed by{" "}
-            <span className="flex">
-              👋
-              <p
-                style={{ color: "#ff0000", cursor: "pointer" }}
-              >
-                PRABAL BHANDARY
-              </p>
-              👋
-            </span>
-          </h1>
           <div className="fperasec">
             <p style={{ color: "#ff0000" }}>
               Disclaimer :- We doesn't store any files on our server. We only
